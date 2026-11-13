@@ -1,0 +1,31 @@
+Inside the folder "ai/design", write a Markdown file for each high-level analysis topic:
+- ontologies: more than one ontologies should be designed: the main one is the one abstracting lots of concepts of a real-time, Role Play Game videogame and the concepts of enumerations, while the other ontologies are per-game specific (fantasy settings, social-love like romantic novels, thriller/detective noir settings, sci-fi settings, horror settings, etc)
+  The abstract ontology describes, among all possible concepts, at least the following one and many more:
+  - resources
+  - living entities
+  - social aggregation of entities [friendship, enemies, love relationships, political groups, betrayals, rebellions, religions and cults, alliances, etc.]
+  - economy-driven aggregation of entities [guilds, syndicates, contracts and agreements, etc]
+  - war-related aggregation of entities [battalions, wars, armies, etc]
+  - weapons
+  - goods
+  - all kind of resources (foods, industrial material, brewing ingredients, catalysts, goods, precious things, kinds of money)
+  - equipment
+  - etc.
+- graph-based hierarchies of dependencies and consequences: the sudden addition of a new entity (which is an Event per se, and it could be story-driven, Player-induced, randomly created, etc.) might induce a cascade and a multi-chain of multiple consequences; a custom reasoner should therefore deduce them by following chains of logical deductions. "Prolog" -alike tools might be involved.
+  Example of events, followed by some consequences :
+  - "a magical weapon has appeared in a king's vault" -> "nearby kingdoms start alliances to use such weapon, others try to steal it and other kingdoms move wars to conquer it" -> "the Player might candidate as: the assassin, the guard, a mercenary, a knight, a diplomat, a lonely theft, etc"
+  - "a huge magical crystal mine has been discovered near a specific kingdom" -> "similarly than the previous example, the Player might decide what roles to get and nearby kingdoms make decisions" -> "commercial routes are created, someone has to bring the materials, others will guard them, caravans bringing goods needs to be escorted and someone will organize to trying to smuggle the caravans"
+  - "a noble hs been assassinated (by the Player, by an NPC, by another kingdom's hitman, etc.)" -> "some social and economical relations has been broken, while others cheers and are finally free to make alliances without breaking previous contracts"
+  - "a kingdom decides to harvest the wood of a forest (for whatever reason: provide goods as a means of satisfying a commercial contract, or just sell the wood to either get rich, or fund the acquisition of high-value items, or fun a war, etc.)" -> "a woodcutter guild is created" -> "a guild of dryads and Nature-related beings tries to rebel" -> "the Player might join the rebellion, join the police, join the woodcutters, kidnap/assassinate the major, burn down the forest, collect the wood by himself to circumvent the woodcutters and the major, do anything else, etc."
+  - "a marriage of a prince and a princess leads to the fusion of two kingdoms" -> "wars might cease" -> "some nobles start to compete to the new kingdom's attention" -> "a local fair is prepared to rank the nobles" -> "some evil-aligned nobles is scheming something evil / murderous" -> "also, guilds might fuse and greater commercial powers are born"
+  - "a new villain (a demon, a litch, an evil king, a monster, an alien, etc) appears" -> "someone will try to join the villain, while others will create quests to take the villain down" 
+- the whole project should be a C++ framework (it needs the compatibility of c++20, c++23 and c++26) to be easily integrated both as a plugin of the software "Unreal Engine 5" (https://www.unrealengine.com/unreal-engine-5 ) and as a plugin of the software "Godot" (https://godotengine.org/ ). Other tools and languages are allowed; for example: Prolog, Protégé (ge.stanford.edu/software/ ), Makefile, databases (SQL-alike and/or noSql), etc.
+
+The previous listing of topic is actually badly divided and grouped: group the information described above into more clear, more fine-grained, more atomic and more specialized topics.
+
+
+
+-----
+
+
+
