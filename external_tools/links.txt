@@ -1,0 +1,5 @@
+
+Jcel
+- https://julianmendez.github.io/jcel/
+- https://github.com/julianmendez/jcel
+- reasoner in Java
