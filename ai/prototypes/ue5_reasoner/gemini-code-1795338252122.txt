@@ -1,0 +1,18 @@
+hierarchical-context-reasoner-java-py3-ue5.zip
+├── java/
+│   ├── pom.xml
+│   └── src/main/java/org/example/aaa/
+│       ├── FocusedSubgraphExtractor.java
+│       ├── PriorityContextReasoner.java
+│       └── ContextDagRunnerDemo.java
+├── python/
+│   ├── requirements.txt
+│   ├── context_reasoner.py
+│   └── demo.py
+└── ue5_plugin/ContextReasoner/
+    ├── ContextReasoner.uplugin
+    └── Source/ContextReasoner/
+        ├── ContextReasoner.Build.cs
+        ├── Public/ContextReasonerTypes.h
+        ├── Public/ContextReasonerSubsystem.h
+        └── Private/ContextReasonerSubsystem.cpp
