@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8/"
+     xml:base="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#price -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#price">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#price"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Item"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#price"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Currency"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#requires -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#requires">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#usableFor"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#requires"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Recipe"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#requires"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Item"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#usableFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#usableFor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#AggregatedEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#AggregatedEntity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Currency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Currency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#EnumAlike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#EnumAlike">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Recipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#ExistenceStatus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#ExistenceStatus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#EnumAlike"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Ingredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Item">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Recipe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#MutableItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#MutableItem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Recipe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Recipe"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cronomatita/ontologies/2026/10/21/untitled-ontology-8#Item"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
