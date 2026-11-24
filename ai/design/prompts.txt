@@ -25,7 +25,30 @@ The previous listing of topic is actually badly divided and grouped: group the i
 
 
 
------
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+
+
+Nice!
+Actually, an entire complex hierarchy of ontologies is required (similarly to the concepts of "interfaces", "abstract classes" and "concrete classes" of the "Object-Oriented Programming" paradigm that Java implements). For example, both resources and equipments are "goods" that can be traded. In particular, equipments might require its own ontology/ontologies due to the complexity that a game might require.
+
+If the "world state" evolves in a contradictory/conflicting state, the Player might be able to intervene and decide how to solve the conundrum. If the Player does not intervene (maybe due to a deliberated choice, or because it's engaged in other activities, or does not have the prerequisites to be allowed in the context in which the conundrum happens), or a (hidden, usually) timeout goes off, then the Game Engine itself picks up a choice: usually, a random choice; if possible, the most likely choice that might emerge by taking into account the closes "entities with some decision-making capability" (like, "relevant NPCs").
+
+Update the existing Markdown files, or modify/merge/remove them, as necessary, to integrate these new information.
+
+
+
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+
+
+Regarding to the decision-making capabilities, entities/NPCs might leverage structures and softwares like "DAOs" ("Decentralized Autonomous Organization"s) and "Smart Contracts", or similar solutions, to create rounds of votes and collectively take decisions. These might be useful, for instance, to manage the AI of kingdoms, of guilds, of universities, of Companies and employers, of armies, of companies of adventurers, etc.
+These reasoning capabilities should be another tool to be added as a sub-plugin. Performances are crucial in this context (therefore, "blockchains" are not suggested).
+Alternatives to DAOs and Smart Contracts should be available and "toggable" / configurable.
+
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+
 
 
 

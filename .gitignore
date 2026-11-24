@@ -66,3 +66,7 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# External tools (keep the links list)
+/external_tools/**
+!/external_tools/links.txt
